@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  background-color: #121212;
+  background-color: #3f3b3b;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +22,7 @@ body {
   background-color: rgba(255, 255, 255, 0.9);
   padding: 40px;
   border-radius: 16px;
-  box-shadow: 10px 10px 10px 10px #d3c9c94d;
+  box-shadow: 9px 8px 7px 5px #d3c9c94d;
   width: 100%;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -31,16 +31,19 @@ body {
 
 .login-box:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 30px  #d3c9c94d;
+  box-shadow: 10px 8px 12px 3px  #d3c9c94d;
 }
 
-h1 {
-  font-size: 36px;
+.Login {
+  font-size: 30px;
   font-weight: 800;
-  color: rgb(0,0,0,0.4);
+  color: rgba(9, 8, 8, 0.901);
   margin-bottom: 25px;
   letter-spacing: 1px;
   text-transform: uppercase;
+  box-shadow: 1px 1px 10px 10px rgb(174, 125, 246);
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 input {
@@ -112,7 +115,7 @@ button:active {
     max-width: 350px;
   }
 
-  h1 {
+  .Login {
     font-size: 30px;
   }
 
@@ -128,7 +131,7 @@ button:active {
     max-width: 90%;
   }
 
-  h1 {
+  .Login {
     font-size: 26px;
   }
 

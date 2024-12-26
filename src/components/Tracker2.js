@@ -684,7 +684,6 @@ export default function CalendarGfg() {
             <div style={styles.calendarWrapper}>  
                 <Calendar
                     onChange={handleDateClick}  
-                    value={value}
                     style={styles.calendar}
                 />
             </div>  
@@ -748,13 +747,15 @@ const styles = {
         padding: '20px',  
         boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',  
         borderRadius: '8px',   
-        marginBottom: "100px" ,
-        color:"black" ,
-        justifyContent:"center",
-        alignItem:"center",
+        marginBottom: "100px",  
+        color: "black",  
+        justifyContent: "center",  
+        alignItems: "center",  
+        backgroundColor: '#f0f8ff', 
     },  
 
     heading: {  
+        color:"back",
         textAlign: 'center',  
         fontSize: '2em',  
         marginBottom: '20px',   
@@ -763,9 +764,14 @@ const styles = {
     },  
 
     calendarWrapper: {  
+        display: 'flex',  
+        justifyContent: 'center',  
+        alignItems: 'center',  
         margin: '20px 0',  
         boxShadow: '0 2px 5px rgba(0, 0, 0, 0.1)',  
-        borderRadius: '5px',
+        borderRadius: '5px',  
+        backgroundColor: ' #a3b7c9', // White background for the calendar section  
+        padding: '20px', // Optional padding  
     },  
 
     calendar: {  
@@ -773,9 +779,12 @@ const styles = {
         height: '500px',  
         fontSize: '1.2em',  
         margin: '0 auto',  
-    },  
+        backgroundColor:' #a3b7c9'
+    },    
     inputContainer: {  
-        margin: '20px 0',  
+        margin: '20px 0', 
+        width:'60%' ,
+        marginLeft:'300px',
     },  
     label: {  
         display: 'block',  
@@ -790,7 +799,7 @@ const styles = {
         borderRadius: '5px',  
         border: '1px solid #ccc',  
         boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',  
-        transition: 'box-shadow 0.3s ease',  
+        transition: 'box-shadow 0.3s ease', 
     },  
     button: {  
         padding: '10px 20px',  
@@ -812,7 +821,7 @@ const styles = {
     subHeading: {  
         fontSize: '1.5em',  
         marginBottom: '20px',  
-        textAlign: 'center',  
+        textAlign: 'center',
     },  
     moodItem: {  
         backgroundColor: '#f9f9f9',  
@@ -830,7 +839,7 @@ const styles = {
         border: 'none',  
         borderRadius: '5px',  
         cursor: 'pointer', 
-        height:"60px",
+        height:"50px",
         width:"70px" ,
         marginRight:"20px"
 
@@ -844,7 +853,7 @@ const styles = {
         border: 'none',  
         borderRadius: '5px',  
         cursor: 'pointer',  
-        height:"60px",
+        height:"50px",
         width:"70px" ,
         marginRight:"20px"
     },  
